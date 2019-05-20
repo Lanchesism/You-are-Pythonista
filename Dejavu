@@ -1,0 +1,30 @@
+求质数
+import math
+for i in range(2,1000000):
+    for j in range(2, int(math.sqrt(i))+1):
+      if i % j == 0:
+          break
+    else:
+     print(i)
+
+求几何级数
+a=int(input())
+q=float(input())
+n=int(input())
+print('a='+str(a)+';'+'q='+str(q)+';'+'n='+str(n))
+result=a*(1-q**n)/(1-q)
+print(result)
+
+求斐波那契数列
+n=int(input())
+a=1
+b=1
+print(a)
+print(b)
+i=0
+while i<(n-2):
+    c=a+b
+    print(c)
+    a=b
+    b=c
+    i+=1
